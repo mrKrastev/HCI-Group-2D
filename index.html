@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Assistant</title>
+    <link rel="stylesheet" href="css.css">
+  </head>
+  <body>
+    <div id="bigDiv">
+<div id="innerDiv">
+        <nav>
+
+        <div class="container">
+            <input id="responsive-menu" type="checkbox">
+            <label for="responsive-menu">
+              <button onclick="question()" style="background-color: #2a2a72;background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%); border-radius:50%; width:25px;height:25px;">?</button>
+
+              <script>
+                function question() {
+                  alert("Welcome, I am your diet aware shopping assistant!Select your preferences, scan items and learn More about items!Everytime you use our system, you get 10 points! (once a day only) HAPPY SHOPPING!");
+                }
+              </script>
+              <span id="menu-icon"></span>
+            </label>
+            <div id="overlay"></div>
+            <ul>
+                <li><h3>Colour filter:</h3>
+                  <span>
+                <input type="checkbox" id="toggle"/>
+                <div>
+                  <label for="toggle"></label>
+                </div>
+                </span>
+              </li>
+              <li><h3>Sound:</h3>
+                <span>
+                  <div>
+                <button type="button" name="button" style="width:100%; height:100%;border-radius:3em;background-image:url(media/sound.jpg);"></button>
+                </div>
+                </span>
+            </li>
+            <li><h3>Font Size:</h3>
+              <span style="background-color:transparent; height:50px; width:100%;">
+              <button type="button" name="button" style="width:20%; height:100%;;background-image:url(media/smallfont.jpg);margin:10px;margin-bottom:30px;"></button>
+              <button type="button" name="button" style="width:20%; height:100%;background-image:url(media/largefont.jpg);margin:10px;margin-bottom:30px;"></button>
+              </span>
+          </li>
+
+          <li><h3>Brightness:</h3>
+            <span style="background-color:transparent; height:50px; width:100%;">
+              <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+            </span>
+        </li>
+
+            </ul>
+
+        </div>
+    </nav>
+<img src="media/logo.png" alt="Logo" width="150px" height="100px" style="border-radius:3em;">
+    <h1>Please scan your loyalty card</h1>
+    <img src="media/barcode.jpg" alt="Logo" width="150px" height="100px" style="margin:15px; margin-top:30px;">
+    <h1>or</h1>
+  <button type="button" name="guest" id="guestBtn" onclick="window.location.href = 'https://www.youtube.com/watch?v=EIkDE67Z5zM'" >Continue as Guest -></button>
+
+</div>
+      </div>
+
+  </body>
+</html>

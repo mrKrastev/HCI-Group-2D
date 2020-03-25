@@ -1,0 +1,376 @@
+body{
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#bigDiv{
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#innerDiv{
+  width:420px;
+  height:595px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+border-style: ridge;
+border-color: black;
+}
+/*idk stuff*/
+@import url(https://use.fontawesome.com/releases/v5.0.6/css/all.css);
+@import url(https://fonts.googleapis.com/css?family=Oswald:400|Raleway:400,700,400italic,700italic);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+
+
+
+
+
+
+a {
+
+    color: #a2ed56;
+}
+
+a:hover {
+    color: #83e4e2;
+    text-decoration: none;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 80em;
+}
+
+
+p {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40em;
+}
+
+.screen-reader-text {
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+}
+
+
+
+/************************************************/
+/****************** NAVIGATION ******************/
+/************************************************/
+nav {
+
+    color: #1d1f20;
+    right: 0;
+    position: relative;
+    top: 0;
+    width:100%;
+    height:10%;
+    z-index: 98;
+    float:right;
+    background-color: transparent;
+}
+
+/*** INPUT ***/
+nav input {
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+/*** LABEL ***/
+nav label {
+    cursor: pointer;
+    display: block;
+    justify-content: center;
+  font: 2em/1 'Oswald', sans-serif;
+    padding: 0.2em;
+}
+
+/* Hamburger Icon */
+#menu-icon,
+#menu-icon:before,
+#menu-icon:after {
+    background: #1d1f20;
+    border-radius: 0.05em;
+    height: 0.1em;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+
+#menu-icon {
+    display: inline-block;
+    margin: 0.4em 0;
+    max-width: 1em;
+    position: relative;
+}
+
+nav label #menu-icon {
+    float: right;
+}
+
+#menu-icon:before,
+#menu-icon:after {
+    content: '';
+    left: 0;
+    position: absolute;
+}
+
+#menu-icon:before {
+    top: -0.4em;
+}
+
+#menu-icon:after {
+    bottom: -0.4em;
+}
+
+/* Close Icon */
+nav input[type=checkbox]:checked + label #menu-icon {
+    background: transparent;
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:before {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+nav input[type=checkbox]:checked + label #menu-icon:after {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+
+
+/*** MENU ***/
+/* Overlay */
+nav input:checked ~ #overlay {
+
+    height: auto;
+    position: fixed;
+  ]
+    width: auto;
+    z-index: 99;
+}
+
+/* List */
+nav ul {
+    font-size: 1.5em;
+    list-style: none;
+    margin: 0;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    background: #606c88;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3f4c6b, #606c88);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #3f4c6b, #606c88); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      border-radius: 3em;
+      width:100%;
+      height:100%;
+}
+
+nav input:checked ~ ul {
+
+    max-height: inherit;
+    opacity: 1;
+}
+
+nav ul > li {
+    margin: 0.5em 0;
+}
+
+nav ul a {
+    color: #1d1f20!important;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    text-decoration: underline;
+}
+
+/* Social Media */
+nav ul#social-media > li {
+    display: inline-block;
+    font-size: 1.5em;
+    margin: 0.5em;
+}
+
+h1{
+  color:white;
+  height:5%;
+  margin:5px;
+  width:70%;
+  text-align: center;
+}
+#guestBtn{
+  background: #283048;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #859398, #283048);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #859398, #283048); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin-top:10px;
+margin-bottom:20px;
+border:transparent;
+color:white;
+}
+
+---------------------------------------
+/* for the lazy */
+@import url(https://fonts.googleapis.com/css?family=Sanchez);
+
+*,
+*::before,
+*::after {
+  transition: 400ms all ease-in-out 50ms;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+li{
+  display:wrap;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+#ToggleButtonSound{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+
+li input[type="checkbox"] {
+  display: none;
+}
+
+
+
+
+/*Button is :CHECKED*/
+
+li input[type="checkbox"]:checked ~ div {
+  background: rgba(73,168,68,1);
+  box-shadow: 0 0 2px rgba(73,168,68,1);
+}
+
+ li input[type="checkbox"]:checked ~ div label {
+   position:relative;
+  left: 55px;
+  transform: rotate(360deg);
+}
+
+
+/*shared*/
+
+
+li label {
+  border-radius: 50px;
+}
+
+
+/*'un':checked state*/
+
+li div {
+  height: 50px;
+  width: 100px;
+  background: rgba(43, 43, 43, 1);
+border-radius: 3em;
+  box-shadow: 0 0 2px rgba(43,43,43,1);
+
+}
+
+li label {
+  height: 40px;
+  width: 40px;
+  background: rgba(255, 255, 255, 1);
+  position: absolute;
+  margin:2px;
+  cursor: pointer;
+}
+
+ li label::before,
+li label::after{
+  background: rgba(43,43,43,1);
+  border-radius: 5px;
+}
+
+/* pesduo class on toggle */
+
+li input[type="checkbox"]:checked ~ div label::before{
+  height: 50px;
+  top: calc(55% - 25px);
+  left: calc(60% - 2.5px);
+  background: rgba(73,168,68,1);
+}
+li input[type="checkbox"]:checked ~ div label::after{
+  width: 20px;
+  top: calc(95% - 25px);
+  left: calc(22.5% - 2.5px);
+  background: rgba(73,168,68,1);
+}
+li span {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+---------------------------------------------------------------------
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  opacity: 1;
+  z-index: 999;
+  width: 50%;
+  height: 25px;
+  background: #d3d3d3;
+  outline: none;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+h3{
+  font-size:3;
+  margin:10px; 
+}

@@ -13,6 +13,19 @@ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, F
   background: #232526;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#custBTN{
+  position:relative;
+  top:25px;
+  height:50px;
+  width:100px;
+  margin-left: 50px;
+  border-radius: 3px;
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:#86A8E7;
+border-color:transparent;
 
 }
 #innerDiv{
@@ -40,7 +53,9 @@ border-color: black;
 /****************** Header ******************/
 /************************************************/
 
-
+h1{
+  color:white;
+}
 .header img {
   float: left;
     position: relative;
@@ -57,6 +72,9 @@ border-color: black;
     display: inline;
   left: 10px;
   color:white;
+}
+.header{
+  width:100%;
 }
 
 
@@ -235,6 +253,30 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     float: right;
      bottom: 0;
      position:relative;
-left: 60%;
+left: 30%;
 padding: 7px 25px;
+}
+#orH1{
+  width:100%;
+  text-align: center;
+  color:white;
+}
+#barcodefield{
+  height:20px;
+  border-radius: 3px;
+margin-bottom:10px;
+border-style: inset;
+border-color:transparent;
+background-color: #5b6467;
+background-image: linear-gradient(315deg, #5b6467 0%, #8b939a 74%);
+}
+#barcodecheck{
+height:25px;
+  border-radius: 3px;
+  background: #141E30;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #243B55, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+color:#86A8E7;
+border-color:transparent;
+
 }

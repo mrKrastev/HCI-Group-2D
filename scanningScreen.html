@@ -16,15 +16,93 @@
         </div>
 
         <h1>Please scan your item</h1>
-        <a href="infoScreenMilk.html">
+        <button type="button" id="barcode" style="background-color:transparent;border-color:transparent;">
         <img src="media/barcode.jpg" id="barcodeIMG"  alt="Logo" width="150px" height="100px" style="margin:15px; margin-top:30px;">
-      </a>
+      </button>
+<style>
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background: rgb(162,180,9);
+  background: linear-gradient(90deg, rgba(162,180,9,1) 0%, rgba(164,164,145,1) 1%, rgba(189,181,156,1) 100%);
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 20%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+<div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+        <button type="button" id="tatoes" onclick="window.location.href='infoScreenChocolate.html'" name="button">Scan Natural Chocolate</button>
+        <button type="button" id="milk" onclick="window.location.href='infoScreenMilk.html'" name="button">Scan Carton Milk</button>
+          <button type="button" id="chicken" onclick="window.location.href='infoScreenChicken.html'" name="button">Scan Chicken Breast</button>
+            <button type="button" id="wine" onclick="window.location.href='infoScreenWine.html'" name="button">Scan Bottle of Wine</button>
+        </div>
+
+      </div>
         <h1 id="orH1">or</h1>
         <input id="barcodefield" type="text" name="barcode">
       <button type="button" name="" id="barcodecheck" onclick="window.location.href = 'https://www.youtube.com/watch?v=EIkDE67Z5zM'" >Check Via Barcode</button>
 
-        </div>
-        </div>
 
+
+        </div>
+        </div>
+            <script>
+            // Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("barcode");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+if (event.target == modal) {
+modal.style.display = "none";
+}
+}
+            </script>
   </body>
 </html>

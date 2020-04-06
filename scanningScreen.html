@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style/customising.css">
+    <link rel="stylesheet" href="note.css">
     <title></title>
   </head>
   <body>
@@ -71,10 +72,22 @@
       </div>
         <h1 id="orH1">or</h1>
         <input id="barcodefield" type="text" name="barcode">
-      <button type="button" name="" id="barcodecheck" onclick="window.location.href = 'https://www.youtube.com/watch?v=EIkDE67Z5zM'" >Check Via Barcode</button>
+      <button type="button" name="" id="barcodecheck" >Check Via Barcode</button>
 
 
 
+        </div>
+        <div id="note">
+          <div id="innerNote">
+            <h1 id="notestitle">Notes:</h1>
+            <p id="notetext"> This is the screen you would see when you are ready to scan items.
+            The items scanning could be simulated by clicking on the barcode. Once you do that you can
+          choose what item you want to scan and it will transfer you to the other screens. The information
+        screens contain information about the scanned item as well as recommended items (everything on that screen is fake and
+        it is purely to show you how the screen would look and what features it would have)
+        An option to add the item code is avaliable! This is for cases when barcode isnt easy to access. Please use the keywords:
+      "chocolate","milk","wine" or "chicken" to navigate.</p>
+          </div>
         </div>
         </div>
             <script>
@@ -103,6 +116,23 @@ if (event.target == modal) {
 modal.style.display = "none";
 }
 }
+ barcodeBTN = document.getElementById("barcodecheck");
+barcodeBTN.onclick=function(){
+
+  if(document.getElementById("barcodefield").value=="chocolate"){
+    window.location.href="infoScreenChocolate.html";
+  }else if(document.getElementById("barcodefield").value=="chicken"){
+    window.location.href="infoScreenChicken.html";
+  }else if(document.getElementById("barcodefield").value=="wine"){
+    window.location.href="infoScreenWine.html";
+  }else if(document.getElementById("barcodefield").value=="milk"){
+    window.location.href="infoScreenMilk.html";
+  }else{
+  window.alert("Not a valid code! Please use the key words given!");
+  }
+}
+
+
             </script>
   </body>
 </html>
